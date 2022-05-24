@@ -123,7 +123,7 @@ case ${TARGET:=`uname`} in
           ARCHS="-arch i386 -arch x86_64 -arch ppc"
           ;;
         10.6.*)                             # == snow leopard (10.6.*)
-          ARCHS="-arch i386 -arch x86_64"   # no more ppc
+          ARCHS="-arch i386 -arch x86_64 -arch ppc" # ppc supported in Rosetta
           ;;
         10.[789].*|10.1[0123].*|10.1[0123]) # >= lion (10.7.*), <= high sierra (10.13.*)
           ARCHS="-arch x86_64 -arch i386"
